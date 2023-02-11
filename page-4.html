@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="body" data-page="4">
+    <main class="main-wrapper">
+      <div class="table">
+        <div class="table-wraper">
+          <div class="table-titles">
+            <div class="table-title">
+              <button type="button" class="close firstName-close">-</button>
+              <p>Имя</p>
+              <div class="table-title__sort firstName-sort">
+                <button type="button" class="sort-btn firstName-sort-up">
+                  <img src="./img/up-arrow.png" alt="" />
+                </button>
+                <button type="button" class="sort-btn firstName-sort-down">
+                  <img src="./img/down-arrow.png" alt="" />
+                </button>
+              </div>
+            </div>
+            <div class="table-title">
+              <button type="button" class="close lastName-close">-</button>
+              <p>Фамилия</p>
+              <div class="table-title__sort lastName-sort">
+                <button type="button" class="sort-btn lastName-sort-up">
+                  <img src="./img/up-arrow.png" alt="" />
+                </button>
+                <button type="button" class="sort-btn lastName-sort-down">
+                  <img src="./img/down-arrow.png" alt="" />
+                </button>
+              </div>
+            </div>
+            <div class="table-title">
+              <button type="button" class="close about-close">-</button>
+              <p>Описание</p>
+              <div class="table-title__sort about-sort">
+                <button type="button" class="sort-btn about-sort-up">
+                  <img src="./img/up-arrow.png" alt="" />
+                </button>
+                <button type="button" class="sort-btn about-sort-down">
+                  <img src="./img/down-arrow.png" alt="" />
+                </button>
+              </div>
+            </div>
+            <div class="table-title">
+              <button type="button" class="close eyeColor-close">-</button>
+              <p>Цвет глаз</p>
+              <div class="table-title__sort eyeColor-sort">
+                <button type="button" class="sort-btn eyeColor-sort-up">
+                  <img src="./img/up-arrow.png" alt="" />
+                </button>
+                <button type="button" class="sort-btn eyeColor-sort-down">
+                  <img src="./img/down-arrow.png" alt="" />
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="table-wraper-list"></div>
+        </div>
+      </div>
+      <div class="custom-row-form hidden" id="customRowForm" aria-hidden="true">
+        <form class="custom-row-form__inner">
+          <p>Редактирование строки</p>
+          <input id="idForm" type="hidden" />
+          <label>
+            <span>Имя</span>
+            <input id="firstName" type="text" />
+          </label>
+          <label>
+            <span>Фамилия</span>
+            <input id="lastName" type="text" />
+          </label>
+          <label>
+            <span>Описание</span>
+            <textarea id="about" cols="30" rows="10"></textarea>
+          </label>
+          <label>
+            <span>Цвет глаз</span>
+            <input id="eyeColor" type="text" />
+          </label>
+          <label>
+            <span>Телефон</span>
+            <input id="phone" type="text" />
+          </label>
+          <div class="custom-row-form__button">
+            <button class="submit-form" type="submit">Изменить</button>
+            <button class="reset-form" type="button">Отмена</button>
+          </div>
+        </form>
+      </div>
+    </main>
+    <ul class="navigation">
+      <li class="navigation__item">
+        <a href="./index.html" class="navigation__link">1</a>
+      </li>
+      <li class="navigation__item">
+        <a href="./page-2.html" class="navigation__link">2</a>
+      </li>
+      <li class="navigation__item">
+        <a href="./page-3.html" class="navigation__link">3</a>
+      </li>
+      <li class="navigation__item active">
+        <a href="./page-4.html" class="navigation__link">4</a>
+      </li>
+      <li class="navigation__item">
+        <a href="./page-5.html" class="navigation__link">5</a>
+      </li>
+      <li class="navigation__item">
+        <a href="./page-all.html" class="navigation__link">Вся таблица</a>
+      </li>
+    </ul>
+    <script src="main.js"></script>
+  </body>
+</html>
